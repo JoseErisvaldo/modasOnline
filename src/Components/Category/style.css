@@ -1,0 +1,23 @@
+.category {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: #fc6b0f;
+  overflow-x: scroll;
+}
+.category::-webkit-scrollbar {
+  background-color: aliceblue;
+}
+.category div {
+  padding: 10px;
+  cursor: pointer;
+}
+.category div:hover {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  background-color: rgb(227, 82, 20);
+}
+.link-category {
+  color: white;
+  text-decoration: none;
+}
