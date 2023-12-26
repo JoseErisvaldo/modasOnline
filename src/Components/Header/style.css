@@ -13,6 +13,17 @@
   width: 320px;
   display: flex;
 }
+.cards-nav h1,
+input {
+  margin: 15px;
+}
+input {
+  width: 50%;
+  height: 25px;
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 17px;
+}
 .cards-nav h1 {
   color: rgb(255, 255, 255);
 }
