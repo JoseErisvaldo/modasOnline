@@ -1,5 +1,10 @@
+import RouterApp from './Router'
 function App() {
-  return <div className="App">Oi</div>
+  return (
+    <div className="App">
+      <RouterApp />
+    </div>
+  )
 }
 
 export default App
