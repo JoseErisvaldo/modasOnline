@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0px;
+}
+#container-nav {
+  max-width: 1920px;
+  background-color: #0060b1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cards-nav {
+  width: 320px;
+  display: flex;
+}
+.cards-nav h1 {
+  color: rgb(255, 255, 255);
+}
+.login {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  color: white;
+  margin: 10px;
+}
+.login i {
+  font-size: 40px;
+}
+.cards-nav i {
+  color: rgba(255, 255, 255, 0.672);
+}
+.boxicons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxicons i {
+  margin: 12px;
+  font-size: 22px;
+}
+.boxiconsi i,
+.login,
+.cards-nav i:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}

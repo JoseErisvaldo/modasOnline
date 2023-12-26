@@ -17,13 +17,17 @@ function Home() {
     loadingProducts()
   }, [])
 
-  function enviarParaWhatsApp(title) {
-    // Construa a URL com os dados do produto e do cliente
-    const url = `https://wa.me/5511958790531?text=Cliente:
-    )}%0AProduto:${encodeURIComponent(title)}`
-
-    // Abra a URL em uma nova janela ou guia
-    window.open(url, '_blank')
+  function enviarWhats(id, item, description, price) {
+    const link = ` 
+      https://wa.me/5511958790531?text=
+      %0AOlá gostaria de fazer saber a disponibilidade deste item:
+      %0AID: ${encodeURIComponent(id)}
+      %0AProduto: ${encodeURIComponent(item)}
+      %0ADescrição: ${encodeURIComponent(description)}
+      %0APreço: ${encodeURIComponent(price)}
+    `
+    let info = ``
+    window.open(link, '_blank')
   }
   return (
     <div>
@@ -35,7 +39,16 @@ function Home() {
             <p>ID: {item.id}</p>
             <p>Descrição: {item.description}</p>
             <p>
-              <div onClick={e => enviarParaWhatsApp(item.title)}>Enviar</div>
+              Imagem: <img src={item.thumbnail}></img>
+            </p>
+            <p>
+              <div
+                onClick={e =>
+                  enviarWhats(item.id, item.title, item.description, item.price)
+                }
+              >
+                Enviar
+              </div>
             </p>
             <hr></hr>
           </div>
