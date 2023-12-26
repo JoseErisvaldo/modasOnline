@@ -1,0 +1,11 @@
+#container-category h2 span {
+  font-size: 36px;
+  cursor: pointer;
+}
+#container-category h2 {
+  display: flex;
+  align-items: center;
+}
+.link-category i {
+  color: black;
+}
