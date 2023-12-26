@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from 'react'
 import api from '../../Services/ApiProducts'
+import CardsCatalogo from '../../Components/Cards'
 function Home() {
   const [listProducts, setProducts] = useState([])
   useEffect(() => {
@@ -32,26 +33,18 @@ function Home() {
   return (
     <div>
       <h1>Lista de produtos</h1>
-      <div>
+      <div className="container-cards">
         {listProducts.map(item => (
-          <div key={item.id}>
-            <p>Titulo: {item.title}</p>
-            <p>ID: {item.id}</p>
-            <p>Descrição: {item.description}</p>
-            <p>
-              Imagem: <img src={item.thumbnail}></img>
-            </p>
-            <p>
-              <div
-                onClick={e =>
-                  enviarWhats(item.id, item.title, item.description, item.price)
-                }
-              >
-                Enviar
-              </div>
-            </p>
-            <hr></hr>
-          </div>
+          <CardsCatalogo
+            key={item.id}
+            discountPercentage={item.discountPercentage}
+            title={item.title}
+            description={item.description}
+            price={item.price}
+            id={item.id}
+            enviarWhats={enviarWhats}
+            thumbnail={item.thumbnail}
+          />
         ))}
       </div>
     </div>
