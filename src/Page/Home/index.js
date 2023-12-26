@@ -32,7 +32,7 @@ function Home() {
   }
   return (
     <div>
-      <h1>Lista de produtos</h1>
+      <h1>Catalogo</h1>
       <div className="container-cards">
         {listProducts.map(item => (
           <CardsCatalogo
