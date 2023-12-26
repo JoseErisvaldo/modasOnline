@@ -4,8 +4,8 @@ function Header() {
     <div id="container-nav">
       <div className="cards-nav">
         <h1>Modas.Online</h1>
-        <input type="text" placeholder="Busque aqui"></input>
       </div>
+      <input type="text" placeholder="Busque aqui"></input>
       <div className="cards-nav">
         <div className="login">
           <i class="bx bxs-user-circle"></i>

@@ -1,0 +1,66 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container-cards {
+  max-width: 1920px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards {
+  width: 300px;
+  height: 420px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid rgba(75, 75, 75, 0.098);
+}
+
+.description {
+  height: 90px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* Define o número máximo de linhas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.discountPercentage {
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fc6b0f;
+  color: white;
+  font-size: 14px;
+}
+.discountPercentage-card {
+  font-size: 22px;
+  color: #fc6b0f;
+}
+.discountPercentage i {
+  font-size: 14px;
+}
+.thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thumbnail img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+}
+.juros {
+  color: rgba(0, 0, 0, 0.43);
+}
+.contact {
+  background-color: #1f9050;
+  color: white;
+  height: 25px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
