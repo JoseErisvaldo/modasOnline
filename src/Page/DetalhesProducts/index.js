@@ -19,7 +19,18 @@ function DetalhesProducts() {
     loadingDetails()
   }, [id])
 
-  console.log(listDetails)
+  function enviarWhats(id, item, description, price) {
+    const link = ` 
+      https://wa.me/5511958790531?text=
+      %0AOlá gostaria de fazer saber a disponibilidade deste item:
+      %0AID: ${encodeURIComponent(id)}
+      %0AProduto: ${encodeURIComponent(item)}
+      %0ADescrição: ${encodeURIComponent(description)}
+      %0APreço: ${encodeURIComponent(price)}
+    `
+    let info = ``
+    window.open(link, '_blank')
+  }
 
   return (
     <div>
@@ -80,7 +91,17 @@ function DetalhesProducts() {
                   juros
                 </div>
                 <div>Ver mais opções de pagamento</div>
-                <div className="contact-details">
+                <div
+                  className="contact-details"
+                  onClick={e =>
+                    enviarWhats(
+                      listDetails.id,
+                      listDetails.title,
+                      listDetails.description,
+                      listDetails.price
+                    )
+                  }
+                >
                   <i class="bx bxl-whatsapp"></i>Entrar em contato
                 </div>
               </div>
