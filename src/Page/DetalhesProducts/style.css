@@ -3,6 +3,10 @@
   width: 100%;
   margin: 10px;
 }
+.btn-return-home i {
+  margin-top: 10px;
+  font-size: 36px;
+}
 .description-details {
   margin: 10px;
 }
@@ -76,4 +80,34 @@
   justify-content: center;
   font-size: 25px;
   color: white;
+}
+
+@media (max-width: 810px) {
+  .card-um {
+    width: 320px;
+    height: 100%;
+    display: flex;
+    flex-direction: none;
+    align-items: none;
+    justify-content: none;
+    margin-left: 50px;
+  }
+  .img-right img {
+    width: 320px;
+  }
+  .img-left {
+    width: 320px;
+    margin: 5px;
+  }
+  .img-left ul li {
+    height: 150px;
+  }
+  .img-left ul li img {
+    width: 100%;
+    height: 100%;
+  }
+  .img-left ul {
+    display: flex;
+    flex-direction: column;
+  }
 }

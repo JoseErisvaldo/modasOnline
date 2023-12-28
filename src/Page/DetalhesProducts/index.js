@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { json, useParams } from 'react-router-dom'
+import { json, useParams, Link } from 'react-router-dom'
 import api from '../../Services/ApiProducts'
 import './style.css'
 
@@ -58,6 +58,11 @@ function DetalhesProducts() {
             <i class="bx bx-right-arrow-alt"></i> Código: {listDetails.id}
           </strong>
           <div className="container-details">
+            <span className='btn-return-home'>
+              <Link to={'/'} className="link-category">
+                <i class="bx bx-chevron-left"></i>
+              </Link>
+            </span>
             <h3 className="description-details">
               ID: {listDetails.description}
             </h3>
