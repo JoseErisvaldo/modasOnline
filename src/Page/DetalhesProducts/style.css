@@ -1,6 +1,10 @@
 .title-product {
   border-bottom: 1px solid rgba(0, 0, 0, 0.254);
   width: 100%;
+  margin: 10px;
+}
+.description-details {
+  margin: 10px;
 }
 .cards-details {
   display: flex;
@@ -53,6 +57,14 @@
 .price-parcelado-details {
   margin-top: 15px;
   font-weight: 900;
+}
+.favorite {
+  text-align: end;
+}
+.favorite i {
+  cursor: pointer;
+  font-size: 40px;
+  color: red;
 }
 .contact-details {
   margin-top: 50px;

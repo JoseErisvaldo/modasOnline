@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { json, useParams } from 'react-router-dom'
 import api from '../../Services/ApiProducts'
 import './style.css'
 
@@ -32,6 +32,21 @@ function DetalhesProducts() {
     window.open(link, '_blank')
   }
 
+  function favorite(id) {
+    const createLocal = localStorage.getItem('@listFavoriteModas')
+    const resLocal = JSON.parse(createLocal) || []
+
+    const hasList = resLocal.some(item => item.id === id)
+
+    if (hasList) {
+      return alert('item ja consta na lista de favoritos !!')
+    }
+
+    resLocal.push(listDetails)
+    localStorage.setItem('@listFavoriteModas', JSON.stringify(resLocal))
+    alert('Item adiconando com sucesso !')
+  }
+
   return (
     <div>
       {listDetails && (
@@ -43,7 +58,9 @@ function DetalhesProducts() {
             <i class="bx bx-right-arrow-alt"></i> Código: {listDetails.id}
           </strong>
           <div className="container-details">
-            <h3>ID: {listDetails.description}</h3>
+            <h3 className="description-details">
+              ID: {listDetails.description}
+            </h3>
             <div className="cards-details">
               <div className="card-um">
                 <div className="img-left">
@@ -91,6 +108,12 @@ function DetalhesProducts() {
                   juros
                 </div>
                 <div>Ver mais opções de pagamento</div>
+                <div className="favorite">
+                  <i
+                    onClick={e => favorite(listDetails.id)}
+                    class="bx bxs-heart"
+                  ></i>
+                </div>
                 <div
                   className="contact-details"
                   onClick={e =>

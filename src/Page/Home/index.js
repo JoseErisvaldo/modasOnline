@@ -30,6 +30,7 @@ function Home() {
     let info = ``
     window.open(link, '_blank')
   }
+
   return (
     <div>
       <h1>Catalogo</h1>
