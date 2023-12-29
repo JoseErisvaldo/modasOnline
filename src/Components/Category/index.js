@@ -27,7 +27,7 @@ function Category() {
         <div key={item}>
           <Link className="link-category" to={`/category/${item}`}>
             {item}
-          </Link>
+        </Link>
         </div>
       ))}
     </div>

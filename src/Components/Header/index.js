@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './style.css'
 function Header() {
   return (
@@ -13,7 +14,9 @@ function Header() {
         </div>
         <div className="boxicons">
           <i class="bx bx-headphone"></i>
-          <i class="bx bxs-heart"></i>
+          <Link to={'/favorite'}>
+            <i class="bx bxs-heart"></i>
+          </Link>
           <i class="bx bxs-cart"></i>
         </div>
       </div>
