@@ -43,16 +43,15 @@ function MyOrders() {
                 <p>Vendido e entregue por: Modas.Online</p>
               </div>
               {order.products.map(product => (
-                <div className="dados-my-order">
-                  <div key={product.id}>
-                    <div className="img-order">
-                      <img src={product.thumbnail} />
-                    </div>
-                    <div>{product.id}</div>
-                    <div> Qtd: {product.quantity}</div>
-                    <div>Unitario: R$: {product.price}</div>
-                    <div>Total: R$: {product.price * product.quantity}</div>
+                <div className="dados-my-order" key={product.id}>
+                  <div className="img-order">
+                    <img src={product.thumbnail} />
                   </div>
+                  <div>{product.id}</div>
+                  <div className='title-orders'>{product.title}</div>
+                  <div> Qtd: {product.quantity}</div>
+                  <div>Unitario: R$: {product.price}</div>
+                  <div>Total: R$: {product.price * product.quantity}</div>
                 </div>
               ))}
             </div>

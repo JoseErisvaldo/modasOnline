@@ -47,6 +47,19 @@
 .cards-total-orders p {
   margin: 5px;
 }
+.dados-my-order {
+  border: 1px solid rgba(0, 0, 0, 0.131);
+  padding: 5px;
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.title-orders {
+  width: 150px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 .img-order img {
   width: 50px;
 }
@@ -54,5 +67,24 @@
 @media (max-width: 740px) {
   #container-my-orders {
     display: block;
+  }
+  .cards-total-orders {
+    width: 290px;
+  }
+  .dados-my-order {
+    border: 1px solid rgba(0, 0, 0, 0.131);
+    padding: 5px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .dados-my-order div {
+    width: 100%;
+    margin: 5px;
+  }
+  .title-orders {
+    width: 50px;
   }
 }
