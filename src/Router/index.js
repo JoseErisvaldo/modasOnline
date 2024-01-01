@@ -5,6 +5,8 @@ import Category from '../Components/Category'
 import ListCategory from '../Page/ListCategory'
 import DetalhesProducts from '../Page/DetalhesProducts'
 import Favorite from '../Page/Favorite'
+import MyEspaco from '../Page/MyEspaco'
+import MyOrders from '../Page/MyOrders'
 function RouterApp() {
   return (
     <BrowserRouter>
@@ -15,6 +17,8 @@ function RouterApp() {
         <Route path="/category/:id" element={<ListCategory />} />
         <Route path="/detalhesproducts/:id" element={<DetalhesProducts />} />
         <Route path="/favorite" element={<Favorite />} />
+        <Route path="/meuespaco" element={<MyEspaco />} />
+        <Route path="/meuespaco/meuspedidos" element={<MyOrders />} />
       </Routes>
     </BrowserRouter>
   )

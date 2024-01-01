@@ -1,0 +1,58 @@
+#container-my-orders {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+}
+#container-my-orders i {
+  font-size: 36px;
+}
+.return-meu-espaco {
+}
+.card-dados-user-orders {
+  width: 290px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.name-user-order {
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.title-my-order {
+  color: #fc6b0f;
+}
+.cards-my-orders {
+  display: flex;
+  flex-wrap: wrap;
+}
+.title-my-order {
+}
+.title-order {
+  background-color: rgba(0, 0, 0, 0.051);
+  display: flex;
+  justify-content: space-between;
+}
+.title-order div {
+  padding: 10px;
+}
+.title-filtro-order {
+  border: 1px solid rgba(0, 0, 0, 0.119);
+  width: 720px;
+}
+.cards-total-orders {
+  border: 1px solid rgb(218, 218, 218);
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.cards-total-orders p {
+  margin: 5px;
+}
+.img-order img {
+  width: 50px;
+}
+
+@media (max-width: 740px) {
+  #container-my-orders {
+    display: block;
+  }
+}

@@ -33,6 +33,7 @@ input {
   width: 150px;
   color: white;
   margin: 10px;
+  text-decoration: none;
 }
 .login i {
   font-size: 40px;

@@ -1,0 +1,67 @@
+#card-espaco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container-my-espaco {
+  margin: 15px;
+  max-width: 720px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.my-orders,
+.my-service,
+.manage-buy,
+.my-cadastro,
+.avaliacao-comment {
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.092);
+  width: 320px;
+  height: 150px;
+  padding: 10px;
+}
+.title-orders i {
+  font-size: 23px;
+}
+.title-orders {
+  color: rgb(227, 82, 20);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.my-orders h4 {
+  background-color: rgb(227, 82, 20);
+  font-size: 12px;
+  padding: 10px;
+  width: 50%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.link-pedidos {
+  color: white;
+  text-decoration: none;
+}
+.link-boleto {
+  color: rgb(1, 1, 1);
+  text-decoration: none;
+}
+.my-orders h6 {
+  cursor: pointer;
+}
+.my-orders p,
+.my-service p,
+.manage-buy p,
+.my-cadastro p,
+.avaliacao-comment p {
+  font-size: 14px;
+  padding: 3px;
+}
+
+.link-dados {
+  color: black;
+  text-decoration: none;
+}
+.link-dados:hover {
+  text-decoration: solid;
+}

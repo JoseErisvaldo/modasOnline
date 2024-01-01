@@ -8,9 +8,12 @@ function Header() {
       </div>
       <input type="text" placeholder="Busque aqui"></input>
       <div className="cards-nav">
-        <div className="login">
-          <i class="bx bxs-user-circle"></i>
-          <div>Faça LOGIN ou crie seu CADASTRO</div>
+        <div>
+          <Link className="login" to={'/meuespaco'}>
+            <i class="bx bxs-user-circle"></i>
+            <div>Olá, José</div>
+            <i class="bx bx-chevron-down"></i>
+          </Link>
         </div>
         <div className="boxicons">
           <i class="bx bx-headphone"></i>
