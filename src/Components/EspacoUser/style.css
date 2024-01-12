@@ -1,3 +1,7 @@
+.link-meu-espaco {
+  font-size: 36px;
+  color: black;
+}
 #card-espaco {
   display: flex;
   justify-content: center;

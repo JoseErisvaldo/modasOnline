@@ -1,0 +1,21 @@
+.card-comments {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 550px;
+  border: 1px solid rgba(0, 0, 0, 0.128);
+}
+.user-comments,
+.description-comments {
+  margin: 10px;
+}
+.img-comments {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.img-comments img {
+  width: 50px;
+  border-radius: 20px;
+}

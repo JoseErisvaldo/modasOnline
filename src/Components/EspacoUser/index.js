@@ -4,6 +4,9 @@ function EspacoUser() {
   return (
     <div>
       <h1>Meu Espaço</h1>
+      <Link to={'/'} className="link-meu-espaco">
+        <i class="bx bx-chevron-left"></i>
+      </Link>
       <div id="card-espaco">
         <div id="container-my-espaco">
           <div className="my-orders">

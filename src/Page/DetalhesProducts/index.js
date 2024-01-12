@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react'
-import { json, useParams, Link } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import api from '../../Services/ApiProducts'
 import './style.css'
+import Rating from '../../Components/Rating'
 
 function DetalhesProducts() {
+
+
   const { id } = useParams()
   const [listDetails, setDetails] = useState(null)
 
@@ -47,8 +50,17 @@ function DetalhesProducts() {
     alert('Item adiconando com sucesso !')
   }
 
+  fetch('https://dummyjson.com/products/1', {
+    method: 'DELETE'
+  })
+    .then(res => res.json())
+    .then(console.log)
+
+
+
+    
   return (
-    <div>
+    <div id="container-details">
       {listDetails && (
         <div>
           <strong className="title-product">
@@ -58,7 +70,7 @@ function DetalhesProducts() {
             <i class="bx bx-right-arrow-alt"></i> Código: {listDetails.id}
           </strong>
           <div className="container-details">
-            <span className='btn-return-home'>
+            <span className="btn-return-home">
               <Link to={'/'} className="link-category">
                 <i class="bx bx-chevron-left"></i>
               </Link>
@@ -137,6 +149,11 @@ function DetalhesProducts() {
           </div>
         </div>
       )}
+
+                  
+
+
+      <Rating />
     </div>
   )
 }
